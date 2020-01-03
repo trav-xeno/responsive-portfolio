@@ -107,7 +107,7 @@
                 <a href="./index.html">About</a>
               </li>
               <li>
-                <a href="./portfolio.html">Pportfolio</a>
+                <a href="./portfolio.html">Portfolio</a>
               </li>
               <li>
                 <a href="#" class=" active ">Contact</a>
@@ -121,37 +121,53 @@
             <i class="material-icons">close</i>
           </a>
           <li><a href="./index.html">About</a></li>
-          <li><a href="./portfolio.html">Pportfolio</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
           <li><a href="#!" class="sideactive">Contact</a></li>
         </ul>
       </header>
       <!--End of header-->
       <main class=" container white flow-text">
-        <div class="row section">
-          <h2 class="headers">Contact</h2>
-          <hr class="margin" />
+        <div class="row col s12">
+          <h3 class="headers">Contact</h3>
         </div>
+
         <div class="row">
           <form class="col s12">
-            <label for="name">Name</label>
-            <br />
-            <input id="name" type="text" pattern="" placeholder="Name" />
-            <br />
-            <label for="email">Email</label>
-            <br />
-            <input id="email" type="email" placeholder="example@example.com" />
-            <br />
-            <label for="message">Message</label>
-            <br />
-            <textarea placeholder="message..."></textarea>
-            <br />
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="frist_name" type="text" class="validate" />
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field  col s6">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea
+                  id="textarea1"
+                  rows="10"
+                  class="materialize-textarea"
+                ></textarea>
+                <label for="textarea1">Message</label>
+              </div>
+            </div>
             <button
               type="submit"
               onclick="popUp()"
               id="submit"
-              class="submit margin"
+              class="submit  btn-large waves-effect "
             >
-              <span>Submit</span>
+              Submit
+              <i class="material-icons right">send</i>
             </button>
           </form>
         </div>

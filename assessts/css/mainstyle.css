@@ -65,6 +65,7 @@ ul.sidenav a.cloe:hover {
 .submit {
   text-align: center;
   color: #fff;
+  margin-bottom: 15px;
   background-color: #1f1f70;
 }
 .submit:hover {
